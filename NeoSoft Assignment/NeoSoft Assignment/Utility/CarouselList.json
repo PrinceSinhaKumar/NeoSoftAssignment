@@ -1,0 +1,121 @@
+{
+  "carouselImages": [
+    {
+      "id": 1,
+      "imageUrl": "image1",
+      "description": "Image 1 description",
+      "items": [
+        {
+        "imageUrl": "image1",
+          "id": 1,
+          "title": "Apple",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image1",
+          "id": 2,
+          "title": "Banana",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image1",
+          "id": 3,
+          "title": "Orange",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image1",
+          "id": 4,
+          "title": "Blueberry",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "image2",
+      "description": "Image 2 description",
+      "items": [
+        {
+            "imageUrl": "image2",
+          "id": 1,
+          "title": "Dog",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image2",
+          "id": 2,
+          "title": "Cat",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image2",
+          "id": 3,
+          "title": "Loin",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image2",
+          "id": 4,
+          "title": "Tiger",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image2",
+          "id": 5,
+          "title": "Cow",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image2",
+          "id": 6,
+          "title": "Elephant",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image2",
+          "id": 7,
+          "title": "Leopord",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image2",
+          "id": 8,
+          "title": "Owl",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "image3",
+      "description": "Image 3 description",
+      "items": [
+        {
+            "imageUrl": "image3",
+          "id": 1,
+          "title": "iPhone 13",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image3",
+          "id": 2,
+          "title": "iPhone 14",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image3",
+          "id": 3,
+          "title": "iPhone 15",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        },
+        {
+            "imageUrl": "image3",
+          "id": 4,
+          "title": "iPhone 12",
+          "subTitle": "An apple is a round, edible fruit produced by an apple tree"
+        }
+      ]
+    }
+  ],
+}
