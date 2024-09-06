@@ -11,6 +11,7 @@ class CarouselListViewModel: ObservableObject {
     
     @Published var carouselList: CarouselListModel?
     @Published var filteredItems: [ListItem] = []
+    @Published var floaterItem: FloaterItem?
     @Published var selectedCarouselId = 1
     
     var numberOfItem: Int {
@@ -31,6 +32,7 @@ class CarouselListViewModel: ObservableObject {
            let jsonData = try String(contentsOfFile: jsonString).data(using: .utf8) {
             carouselList = try await parser.dataParser(for: jsonData)
             filteredItems = carouselList?.carouselImages.first?.items ?? []
+            makeFloaterItem()
         } else {
             throw ErrorHandler.fileNotAvailable
         }
@@ -49,4 +51,32 @@ class CarouselListViewModel: ObservableObject {
         }
         return items
     }
+    
+    func makeFloaterItem() {
+        if let carousel = carouselList?.carouselImages.first(where: { $0.id == selectedCarouselId }) {
+            floaterItem = calculateStatistics(for: carousel)
+        }
+    }
+    
+    private func calculateStatistics(for carouselImage: CarouselImage) -> FloaterItem {
+           var characterCount: [Character: Int] = [:]
+           for item in carouselImage.items {
+               for char in item.title.lowercased() {
+                   if char.isLetter {
+                       characterCount[char, default: 0] += 1
+                   }
+               }
+           }
+           let sortedCharacterCount = characterCount
+               .map { CharacterCount(character: String($0.key), count: $0.value) }
+               .sorted { $0.count > $1.count }
+               .prefix(3)
+           
+           return FloaterItem(
+               carouselId: carouselImage.id,
+               page: "List \(carouselImage.id)",
+               itemCount: carouselImage.items.count,
+               topCharacters: Array(sortedCharacterCount)
+           )
+       }
 }

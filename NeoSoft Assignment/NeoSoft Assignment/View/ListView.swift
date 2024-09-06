@@ -10,7 +10,7 @@ import SwiftUI
 struct ListView: View {
     let filterItem: [ListItem]
     var body: some View {
-        List(filterItem) { item in
+        ForEach(filterItem) { item in
             HStack {
                 Image(item.imageUrl)
                     .resizable()
@@ -29,20 +29,7 @@ struct ListView: View {
             }
             .background(Color.listBackground)
             .cornerRadius(10)
-            .listRowSeparator(.hidden)
-            .listRowBackground(Color.clear)
-            .listRowInsets(.init(top: 0, leading: 0, bottom: 5, trailing: 0))
             
-        }
-        .listStyle(.plain)
-        .background(Color.clear)
-        .scrollContentBackground(.hidden)
-        .padding()
-        .ignoresSafeArea()
-        .overlay {
-            if filterItem.isEmpty {
-                ContentUnavailableView("No data found", systemImage: "doc.text")
-            }
         }
     }
 }
