@@ -8,26 +8,31 @@
 import SwiftUI
 
 struct FloatingView: View {
-    var carouselList: [String]?
-    @Binding var selectedFilter: String
+    let statistic: FloaterItem
     var body: some View {
-        Menu {
-            ForEach(carouselList ?? [], id: \.self) { item in
-                Button(item) {
-                    selectedFilter = item
+        HStack {
+            VStack(alignment: .leading) {
+                Text(statistic.page)
+                    .font(.headline)
+                    .padding(.top)
+                
+                Text("Item Count: \(statistic.itemCount)")
+                    .font(.subheadline)
+                    .padding(.top, 5)
+                
+                ForEach(statistic.topCharacters, id: \.character) { characterCount in
+                    Text("\(characterCount.character) = \(characterCount.count)")
+                        .font(.body)
                 }
+                
+                Spacer()
             }
-        } label: {
-            Image(systemName: "ellipsis")
-                .rotationEffect(.degrees(90))
-                .frame(width: 50, height: 50)
-                .foregroundColor(.white)
+            .padding()
+            .background(Color.white)
+            
+            Spacer()
+        .cornerRadius(20)
         }
-        .background(.blue)
-        .cornerRadius(25)
-        .shadow(radius: 10)
-        .padding()
-        
-        
     }
 }
+

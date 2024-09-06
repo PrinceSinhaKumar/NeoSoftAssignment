@@ -19,6 +19,8 @@
 		F45E73D52C87A91600C30144 /* FloatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E73D42C87A91600C30144 /* FloatingView.swift */; };
 		F45E73D72C87A9BE00C30144 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E73D62C87A9BE00C30144 /* DataParser.swift */; };
 		F45E73D92C87A9EB00C30144 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E73D82C87A9EB00C30144 /* ErrorHandler.swift */; };
+		F45E73FB2C8B90EA00C30144 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E73FA2C8B90EA00C30144 /* SearchBar.swift */; };
+		F45E73FD2C8B910D00C30144 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E73FC2C8B910D00C30144 /* FloatingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		F45E73D42C87A91600C30144 /* FloatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingView.swift; sourceTree = "<group>"; };
 		F45E73D62C87A9BE00C30144 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		F45E73D82C87A9EB00C30144 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		F45E73FA2C8B90EA00C30144 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		F45E73FC2C8B910D00C30144 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				F45E73B72C87694200C30144 /* ContentView.swift */,
+				F45E73FC2C8B910D00C30144 /* FloatingButton.swift */,
 				F45E73D22C87A63500C30144 /* CarouselView.swift */,
 				F45E73D02C87A60700C30144 /* ListView.swift */,
+				F45E73FA2C8B90EA00C30144 /* SearchBar.swift */,
 				F45E73D42C87A91600C30144 /* FloatingView.swift */,
 			);
 			path = View;
@@ -201,8 +207,10 @@
 				F45E73D12C87A60700C30144 /* ListView.swift in Sources */,
 				F45E73B82C87694200C30144 /* ContentView.swift in Sources */,
 				F45E73D92C87A9EB00C30144 /* ErrorHandler.swift in Sources */,
+				F45E73FB2C8B90EA00C30144 /* SearchBar.swift in Sources */,
 				F45E73D32C87A63500C30144 /* CarouselView.swift in Sources */,
 				F45E73B62C87694200C30144 /* NeoSoft_AssignmentApp.swift in Sources */,
+				F45E73FD2C8B910D00C30144 /* FloatingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
