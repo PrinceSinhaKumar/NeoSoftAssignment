@@ -21,6 +21,13 @@
 		F45E73D92C87A9EB00C30144 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E73D82C87A9EB00C30144 /* ErrorHandler.swift */; };
 		F45E73FB2C8B90EA00C30144 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E73FA2C8B90EA00C30144 /* SearchBar.swift */; };
 		F45E73FD2C8B910D00C30144 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E73FC2C8B910D00C30144 /* FloatingButton.swift */; };
+		F45E74022C8B9CCD00C30144 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E74012C8B9CCD00C30144 /* CarouselViewController.swift */; };
+		F45E74042C8BA13500C30144 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E74032C8BA13500C30144 /* Carousel.swift */; };
+		F45E74062C8BA8E400C30144 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E74052C8BA8E400C30144 /* CarouselCell.swift */; };
+		F45E74082C8C324200C30144 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E74072C8C324200C30144 /* ListViewCell.swift */; };
+		F45E740A2C8C42A400C30144 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E74092C8C42A400C30144 /* SearchBarView.swift */; };
+		F45E740C2C8C4D1B00C30144 /* CarouselUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E740B2C8C4D1B00C30144 /* CarouselUIKitView.swift */; };
+		F45E740E2C8C543000C30144 /* FloatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E740D2C8C543000C30144 /* FloatingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +46,13 @@
 		F45E73D82C87A9EB00C30144 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		F45E73FA2C8B90EA00C30144 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		F45E73FC2C8B910D00C30144 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		F45E74012C8B9CCD00C30144 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		F45E74032C8BA13500C30144 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		F45E74052C8BA8E400C30144 /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
+		F45E74072C8C324200C30144 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		F45E74092C8C42A400C30144 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		F45E740B2C8C4D1B00C30144 /* CarouselUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselUIKitView.swift; sourceTree = "<group>"; };
+		F45E740D2C8C543000C30144 /* FloatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,7 @@
 				F45E73C52C876F2400C30144 /* Utility */,
 				F45E73C62C876F5800C30144 /* Model */,
 				F45E73C92C87700E00C30144 /* ViewModel */,
+				F45E73FE2C8B9BEC00C30144 /* UIKitView */,
 				F45E73CF2C87A5F700C30144 /* View */,
 				F45E73B92C87694300C30144 /* Assets.xcassets */,
 				F45E73BB2C87694300C30144 /* Preview Content */,
@@ -126,6 +141,21 @@
 				F45E73FA2C8B90EA00C30144 /* SearchBar.swift */,
 				F45E73D42C87A91600C30144 /* FloatingView.swift */,
 			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F45E73FE2C8B9BEC00C30144 /* UIKitView */ = {
+			isa = PBXGroup;
+			children = (
+				F45E740B2C8C4D1B00C30144 /* CarouselUIKitView.swift */,
+				F45E74012C8B9CCD00C30144 /* CarouselViewController.swift */,
+				F45E74032C8BA13500C30144 /* Carousel.swift */,
+				F45E74092C8C42A400C30144 /* SearchBarView.swift */,
+				F45E74052C8BA8E400C30144 /* CarouselCell.swift */,
+				F45E74072C8C324200C30144 /* ListViewCell.swift */,
+				F45E740D2C8C543000C30144 /* FloatingViewController.swift */,
+			);
+			name = UIKitView;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -200,15 +230,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45E740E2C8C543000C30144 /* FloatingViewController.swift in Sources */,
 				F45E73CB2C8770AD00C30144 /* CarouselListViewModel.swift in Sources */,
 				F45E73C82C876F8B00C30144 /* CarouselListModel.swift in Sources */,
+				F45E74042C8BA13500C30144 /* Carousel.swift in Sources */,
 				F45E73D72C87A9BE00C30144 /* DataParser.swift in Sources */,
+				F45E740A2C8C42A400C30144 /* SearchBarView.swift in Sources */,
 				F45E73D52C87A91600C30144 /* FloatingView.swift in Sources */,
+				F45E74022C8B9CCD00C30144 /* CarouselViewController.swift in Sources */,
 				F45E73D12C87A60700C30144 /* ListView.swift in Sources */,
+				F45E740C2C8C4D1B00C30144 /* CarouselUIKitView.swift in Sources */,
+				F45E74082C8C324200C30144 /* ListViewCell.swift in Sources */,
 				F45E73B82C87694200C30144 /* ContentView.swift in Sources */,
 				F45E73D92C87A9EB00C30144 /* ErrorHandler.swift in Sources */,
 				F45E73FB2C8B90EA00C30144 /* SearchBar.swift in Sources */,
 				F45E73D32C87A63500C30144 /* CarouselView.swift in Sources */,
+				F45E74062C8BA8E400C30144 /* CarouselCell.swift in Sources */,
 				F45E73B62C87694200C30144 /* NeoSoft_AssignmentApp.swift in Sources */,
 				F45E73FD2C8B910D00C30144 /* FloatingButton.swift in Sources */,
 			);
@@ -349,8 +386,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,8 +413,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

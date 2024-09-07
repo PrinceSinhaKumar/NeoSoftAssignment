@@ -11,7 +11,7 @@ import SwiftUI
 struct NeoSoft_AssignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: CarouselListViewModel(parser: DataParser()))
+            CarouselUIKitView()
         }
     }
 }
