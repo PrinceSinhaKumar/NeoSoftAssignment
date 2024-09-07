@@ -65,7 +65,7 @@ class ListViewCell: UITableViewCell {
             baseView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
             baseView.topAnchor.constraint(equalTo: contentView.topAnchor),
             baseView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -4),
-            itemImageView.leadingAnchor.constraint(equalTo: baseView.leadingAnchor, constant: 10),
+            itemImageView.leadingAnchor.constraint(equalTo: baseView.leadingAnchor, constant: 5),
             itemImageView.topAnchor.constraint(equalTo: baseView.topAnchor, constant: 5),
             itemImageView.bottomAnchor.constraint(equalTo: baseView.bottomAnchor, constant: -5),
             itemImageView.widthAnchor.constraint(equalToConstant: 70),
