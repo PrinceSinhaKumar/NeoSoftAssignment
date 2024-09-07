@@ -33,16 +33,3 @@ struct FloatingView: View {
         }
     }
 }
-
-/*
- private func updateStatistics() {
-     guard let statistic else { return }
-     itemCountLabel.text = "List 1 (\(statistic.itemCount) items)"
-     
-     var occurrencesText = "Top 3 Occurrences:\n"
-     for item in statistic.topCharacters {
-         occurrencesText += "\(item.character) = \(item.count)\n"
-     }
-     characterOccurrencesLabel.text = occurrencesText
- }
- */
