@@ -12,14 +12,12 @@ struct FloatingView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(statistic.page)
+               
+                Text("List 1 (\(statistic.itemCount) items)")
                     .font(.headline)
                     .padding(.top)
-                
-                Text("Item Count: \(statistic.itemCount)")
-                    .font(.subheadline)
-                    .padding(.top, 5)
-                
+                Text("Top 3 Occurrences:")
+                    .padding(.top)
                 ForEach(statistic.topCharacters, id: \.character) { characterCount in
                     Text("\(characterCount.character) = \(characterCount.count)")
                         .font(.body)
@@ -36,3 +34,15 @@ struct FloatingView: View {
     }
 }
 
+/*
+ private func updateStatistics() {
+     guard let statistic else { return }
+     itemCountLabel.text = "List 1 (\(statistic.itemCount) items)"
+     
+     var occurrencesText = "Top 3 Occurrences:\n"
+     for item in statistic.topCharacters {
+         occurrencesText += "\(item.character) = \(item.count)\n"
+     }
+     characterOccurrencesLabel.text = occurrencesText
+ }
+ */
